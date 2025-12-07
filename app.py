@@ -68,14 +68,14 @@ with col1:
     target_file = st.file_uploader("Upload Target Image", type=["jpg", "png", "jpeg"], key="target")
     if target_file:
         target_image = Image.open(target_file)
-        st.image(target_image, caption="Target Object", use_container_width=True)
+        st.image(target_image, caption="Target Object", width="stretch")
 
 with col2:
     st.subheader("2. Scene Image")
     scene_file = st.file_uploader("Upload Scene Image", type=["jpg", "png", "jpeg"], key="scene")
     if scene_file:
         scene_image = Image.open(scene_file)
-        st.image(scene_image, caption="Scene to Analyze", use_container_width=True)
+        st.image(scene_image, caption="Scene to Analyze", width="stretch")
 
 st.markdown("---")
 
